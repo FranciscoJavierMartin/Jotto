@@ -1,10 +1,7 @@
 import React from 'react';
-import Enzyme, { shallow, ShallowWrapper } from 'enzyme';
-import EnzymeAdapter from 'enzyme-adapter-react-16';
+import { shallow, ShallowWrapper } from 'enzyme';
 import Congrats, { ICongratsProps } from './Congrats';
 import { findByTestAttr } from '../../test/testUitls';
-
-Enzyme.configure({adapter: new EnzymeAdapter()});
 
 const defaultProps: ICongratsProps = {
     success: false
@@ -16,7 +13,7 @@ const defaultProps: ICongratsProps = {
  * @param props - Component props specific to this setup
  * @returns {ShallowWrapper}
  */
-const setup = (props = {}) => {
+const setup = (props = {}): ShallowWrapper => {
     const setupProps = {...defaultProps, ...props};
     return shallow(<Congrats {...setupProps}/>)
 };

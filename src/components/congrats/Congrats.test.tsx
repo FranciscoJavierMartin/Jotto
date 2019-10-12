@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, ShallowWrapper } from 'enzyme';
 import Congrats, { ICongratsProps } from './Congrats';
-import { findByTestAttr } from '../../test/testUitls';
+import { findByTestAttr } from '../../../test/testUitls';
 
 const defaultProps: ICongratsProps = {
     success: false

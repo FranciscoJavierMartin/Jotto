@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface ICongratsProps {
+export interface ICongratsProps {
     success?: boolean;
 }
 

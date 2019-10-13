@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import './App.css';
+import Congrats from './components/congrats/Congrats';
+import GuessedWords from './components/guessedWords/GuessedWords';
 
-const App: React.FC = () => {
+class App extends Component<{},{}> {
+
+  render(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>Jotto</h1>
+      <Congrats success={true}/>
+      <GuessedWords guessedWords={[
+        { guessedWord: 'train', letterMatchCount: 3}
+      ]}/>
     </div>
-  );
+  );}
 }
 
 export default App;

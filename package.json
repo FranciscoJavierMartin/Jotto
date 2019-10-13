@@ -10,7 +10,9 @@
     "ajv": "^6.10.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-redux": "^7.1.1",
     "react-scripts": "3.2.0",
+    "redux": "^4.0.4",
     "typescript": "3.6.4"
   },
   "scripts": {
@@ -38,6 +40,8 @@
     "@types/ajv": "^1.0.0",
     "@types/enzyme": "^3.10.3",
     "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/react-redux": "^7.1.4",
+    "@types/redux": "^3.6.0",
     "babel-plugin-react-remove-properties": "^0.3.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",

@@ -3,21 +3,39 @@ import { connect} from 'react-redux';
 
 interface IInputProps {
   store: any;
+  success: boolean;
 }
 
 class Input extends Component<IInputProps> {
-
+  
   render() {
+    const content = this.props.success
+      ? null
+      : (
+        <form className="form-inline">
+          <input
+            data-test="input-box"
+            className="mb-2 mx-sm-3"
+            type="text"
+            placeholder="enter guess"/>
+          <button
+            data-test="submit-button"
+            className="btn btn-primary mb-2"
+            type="submit">
+            Submit
+          </button>
+        </form>
+      );
     return(
-      <div>
+      <div className="component-input">
 
       </div>
     );
   };
 }
 
-const mapStateToProps = (state: any) => {
-  return {}
+const mapStateToProps = ({success}: any) => {
+  return { success }
 };
 
 export default connect(mapStateToProps)(Input);

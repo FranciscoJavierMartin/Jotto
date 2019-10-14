@@ -18,4 +18,14 @@ describe('getLetterMatchCount', () => {
         const letterMatchCount = getLetterMatchCount('parka', secretWord);
         expect(letterMatchCount).toBe(3);
     });
+
+    test('returns correct count when both words are the same', () => {
+        const letterMatchCount = getLetterMatchCount('party', secretWord);
+        expect(letterMatchCount).toBe(5);
+    });
+
+    test('returns correct count when there are anagram', () => {
+        const letterMatchCount = getLetterMatchCount('ytrap', secretWord);
+        expect(letterMatchCount).toBe(5);
+    });
 });

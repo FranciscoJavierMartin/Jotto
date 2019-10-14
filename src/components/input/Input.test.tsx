@@ -11,9 +11,7 @@ import Input from './Input';
  * @returns {ShallowWrapper}
  */
 const setup = (initialState={}): ShallowWrapper => {
-  console.log('Initial state', initialState);
   const store = storeFactory(initialState);
-  console.log('Store', store.getState());
   const wrapper = shallow(<Input store={store}/>).dive().dive();
   return wrapper;
 };
@@ -47,7 +45,6 @@ describe('render', () => {
     beforeEach(() => {
       const initialState = { success: true };
       wrapper = setup(initialState);
-      console.log(wrapper.debug());
     });
 
     test('renders component without error', () => {

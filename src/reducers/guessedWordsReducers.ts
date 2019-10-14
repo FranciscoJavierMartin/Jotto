@@ -6,8 +6,8 @@ import { actionTypes } from '../actions';
  * @param {object} action - action to be reduced.
  * @returns {array} - new guessed state.
  */
-export default(state=[], action: any) => {
-  let res;
+export default (state=[], action: any): any[] => {
+  let res: any[];
 
   switch(action.type){
     case actionTypes.GUESS_WORD:
@@ -16,5 +16,6 @@ export default(state=[], action: any) => {
     default:
       res = [...state];
   }
+
   return res;
 }

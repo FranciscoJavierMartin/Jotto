@@ -8,7 +8,6 @@ interface IInputProps {
 
 class Input extends Component<IInputProps> {
   render() {
-    console.log('Props', this.props.success);
     const content = this.props.success ? <div/> : (
       <form className='form-inline'>
         <input

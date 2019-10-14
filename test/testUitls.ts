@@ -19,5 +19,7 @@ export const findByTestAttr = (wrapper: ShallowWrapper, val: string): ShallowWra
  * @param initialState - Initial state for store.
  * @returns {Store} - Redux store.
  */
-export const storeFactory = (initialState: any) => 
-    createStore(rootReducer, initialState);
+export const storeFactory = (initialState: any) => {
+    console.log('InitialState2', initialState);
+    return createStore(rootReducer, initialState);
+}

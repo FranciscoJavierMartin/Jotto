@@ -14,7 +14,7 @@ export default (state = false, action: any) => {
       newState = true;
       break;
     default:
-      newState = false;
+      newState = state;
   }
 
   return newState;

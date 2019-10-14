@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import { connect} from 'react-redux';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 interface IInputProps {
   store: any;
@@ -7,35 +7,30 @@ interface IInputProps {
 }
 
 class Input extends Component<IInputProps> {
-  
   render() {
-    const content = this.props.success
-      ? null
-      : (
-        <form className="form-inline">
-          <input
-            data-test="input-box"
-            className="mb-2 mx-sm-3"
-            type="text"
-            placeholder="enter guess"/>
-          <button
-            data-test="submit-button"
-            className="btn btn-primary mb-2"
-            type="submit">
-            Submit
-          </button>
-        </form>
-      );
-    return(
-      <div className="component-input">
-
-      </div>
+    console.log('Props', this.props.success);
+    const content = this.props.success ? <div/> : (
+      <form className='form-inline'>
+        <input
+          data-test="input-box"
+          className='mb-2 mx-sm-3'
+          type='text'
+          placeholder='enter guess'
+        />
+        <button
+          data-test='submit-button'
+          className='btn btn-primary mb-2'
+          type='submit'>
+          Submit
+        </button>
+      </form>
     );
-  };
+    return <div data-test='component-input'>{content}</div>;
+  }
 }
 
-const mapStateToProps = ({success}: any) => {
-  return { success }
+const mapStateToProps = ({ success }: any) => {
+  return { success };
 };
 
 export default connect(mapStateToProps)(Input);

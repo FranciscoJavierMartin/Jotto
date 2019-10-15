@@ -6,7 +6,7 @@ import { actionTypes } from '../actions';
  * @param {object} action - action to be reduced.
  * @returns {array} - new guessed state.
  */
-export default (state=[], action: any): any[] => {
+export default (state: any[] = [], action: any): any[] => {
   let res: any[];
 
   switch(action.type){

@@ -38,6 +38,17 @@ export const getSecretWord = () => {
           type: actionTypes.SET_SECRET_WORD,
           payload: response.data
         });
+      })
+      .catch((error: any) => {
+        const index = Math.floor(Math.random() * secretWords.length);
+        dispatch({
+          type: actionTypes.SET_SECRET_WORD,
+          payload: secretWords[index]
+        });
       });
   }
 }
+
+const secretWords = [
+  'Hello'
+];

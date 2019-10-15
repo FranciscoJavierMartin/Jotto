@@ -24,7 +24,7 @@ export const guessWord = (guessedWord: string): any => {
       payload: { guessedWord, letterMatchCount }
     });
 
-    if(guessedWord == secretWord) {
+    if(guessedWord === secretWord) {
       dispatch({ type: actionTypes.CORRECT_GUESS });
     }
   }

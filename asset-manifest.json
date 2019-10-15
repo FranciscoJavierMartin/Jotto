@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/myapp/static/css/main.27fd15f6.chunk.css",
-    "main.js": "/myapp/static/js/main.69b8e232.chunk.js",
-    "main.js.map": "/myapp/static/js/main.69b8e232.chunk.js.map",
-    "runtime-main.js": "/myapp/static/js/runtime-main.4958c4ce.js",
-    "runtime-main.js.map": "/myapp/static/js/runtime-main.4958c4ce.js.map",
-    "static/js/2.768cf609.chunk.js": "/myapp/static/js/2.768cf609.chunk.js",
-    "static/js/2.768cf609.chunk.js.map": "/myapp/static/js/2.768cf609.chunk.js.map",
-    "index.html": "/myapp/index.html",
-    "precache-manifest.73ef03eba53b26bda41eb56ec70724c1.js": "/myapp/precache-manifest.73ef03eba53b26bda41eb56ec70724c1.js",
-    "service-worker.js": "/myapp/service-worker.js",
-    "static/css/main.27fd15f6.chunk.css.map": "/myapp/static/css/main.27fd15f6.chunk.css.map"
+    "main.css": "/jotto/static/css/main.27fd15f6.chunk.css",
+    "main.js": "/jotto/static/js/main.e6abf65c.chunk.js",
+    "main.js.map": "/jotto/static/js/main.e6abf65c.chunk.js.map",
+    "runtime-main.js": "/jotto/static/js/runtime-main.07986042.js",
+    "runtime-main.js.map": "/jotto/static/js/runtime-main.07986042.js.map",
+    "static/js/2.768cf609.chunk.js": "/jotto/static/js/2.768cf609.chunk.js",
+    "static/js/2.768cf609.chunk.js.map": "/jotto/static/js/2.768cf609.chunk.js.map",
+    "index.html": "/jotto/index.html",
+    "precache-manifest.ef6ce97330b40d3af2d51db3fa78b979.js": "/jotto/precache-manifest.ef6ce97330b40d3af2d51db3fa78b979.js",
+    "service-worker.js": "/jotto/service-worker.js",
+    "static/css/main.27fd15f6.chunk.css.map": "/jotto/static/css/main.27fd15f6.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.4958c4ce.js",
+    "static/js/runtime-main.07986042.js",
     "static/js/2.768cf609.chunk.js",
     "static/css/main.27fd15f6.chunk.css",
-    "static/js/main.69b8e232.chunk.js"
+    "static/js/main.e6abf65c.chunk.js"
   ]
 }

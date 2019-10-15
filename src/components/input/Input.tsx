@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { guessWord } from '../../actions';
 
 interface IInputProps {
   store: any;
@@ -32,4 +33,4 @@ const mapStateToProps = ({ success }: any) => {
   return { success };
 };
 
-export default connect(mapStateToProps)(Input);
+export default connect(mapStateToProps, { guessWord })(Input);

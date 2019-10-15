@@ -16,15 +16,15 @@ export const actionTypes = {
  */
 export const guessWord = (guessedWord: string): any => {
   return function(dispatch: Function, getState: any){
-    const secretWord = getState().secretWord;
+    const secretWord: string = getState().secretWord.toLowerCase();
     const letterMatchCount = getLetterMatchCount(guessedWord, secretWord);
 
     dispatch({
       type: actionTypes.GUESS_WORD,
       payload: { guessedWord, letterMatchCount }
     });
-
-    if(guessedWord === secretWord) {
+    
+    if(guessedWord.toLowerCase() === secretWord) {
       dispatch({ type: actionTypes.CORRECT_GUESS });
     }
   }
@@ -50,5 +50,10 @@ export const getSecretWord = () => {
 }
 
 const secretWords = [
-  'Hello'
+  'Hello',
+  'train',
+  'party',
+  'dog',
+  'cat',
+  'candy'
 ];
